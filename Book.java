@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber = "";
+    private int borrowed;
 
     /**
      * 2.86 - by having a field that is a step removed and accessed through 
@@ -72,7 +73,7 @@ class Book
         System.out.print("Title: " +title
                             +" Author: " +author
                             +" Pages: " +pages
-                            
+                            +" Borrowed: " +borrowed
     //excercise 2.89
                             +" Reference Number: ");                      
             if(refNumber.length() == 0)
@@ -80,6 +81,7 @@ class Book
             else{
             System.out.print(refNumber);
         }
+        System.out.println();
     }
     //excercise 2.88
     /**
@@ -104,4 +106,16 @@ class Book
         return refNumber;
     }
     
-}
+    /**
+     * Borrows a book adding +1 each time book is borrowed
+     */
+    public void borrow()
+    {
+        borrowed ++;
+    }
+    
+    public int getBorrowed()
+    {
+        return borrowed;   
+    }   
+}    
