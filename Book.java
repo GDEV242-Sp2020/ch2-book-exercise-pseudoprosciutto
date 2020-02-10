@@ -83,11 +83,17 @@ class Book
     }
     //excercise 2.88
     /**
-     * Mutator for refNumber 
+     * Mutator for refNumber. Will only set if 3 or more characters
      */
     public void setRefNumber(String ref)
     {
+        //excercise 2.90
+        if(ref.length()>2)
         refNumber = ref;
+        else{
+            System.out.println("ERROR: Reference Number must be 3 or more "
+                                +"characters long");
+            }
     }
     
     /**
