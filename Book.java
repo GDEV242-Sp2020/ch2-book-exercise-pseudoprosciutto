@@ -1,7 +1,6 @@
 /**
- * A class that maintains information on a book.
- * This might form part of a larger application such
- * as a library system, for instance.
+ * A class that an object book is modelled from.
+ * Each book has fields: author, title, pages, refNumber, borrowed, courseText
  *
  * @author Matthew Sheehan
  * @version 02/09/2020
@@ -13,19 +12,21 @@ class Book
     private String title;
     private int pages;
     private String refNumber = "";
-    private int borrowed;
+    private int borrowed;//has book been borrowed how many times?
+    private boolean courseText;
 
     /**
      * 2.86 - by having a field that is a step removed and accessed through 
      * read only methods the field is immutable. 
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages,
+                boolean isCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        courseText = isCourseText;
     }
-    
     
     //excercise 2.83 accessor methods
     /**
@@ -114,8 +115,20 @@ class Book
         borrowed ++;
     }
     
+    /**
+     * returns borrowed
+     */
     public int getBorrowed()
     {
         return borrowed;   
     }   
+    
+    //excercise 2.92
+    /**
+     * returns courseText boolean
+     */
+    public boolean isCourseText()
+    {
+        return courseText;
+    }
 }    
