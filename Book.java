@@ -23,15 +23,32 @@ class Book
     }
     
     //excercise 2.83 accessor methods
+    /**
+     * get Author of book
+     */
     public String getAuthor(){
         return author;
     }
     
-    
+    /**
+    * get Title of book
+    */
     public String getTitle(){
         return title;
     }
     
+    //excercise 2.84
+    /**
+     * Print Author to the terminal
+     */
+    public void printAuthor(){
+        System.out.println("Author: " +author);
+    }
     
-    
+    /**
+     * Print Title to the terminal
+     */
+    public void printTitle(){
+        System.out.println("Title: " +title);
+    }
 }
