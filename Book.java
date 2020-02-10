@@ -69,11 +69,18 @@ class Book
      * Prints the details of the book: title ,author, and pages.
      */
     public void printDetails(){
-        System.out.println("Title: " +title
+        System.out.print("Title: " +title
                             +" Author: " +author
-                            +" Pages: " +pages);
+                            +" Pages: " +pages
+                            
+    //excercise 2.89
+                            +" Reference Number: ");                      
+            if(refNumber.length() == 0)
+            System.out.print("ZZZ");
+            else{
+            System.out.print(refNumber);
+        }
     }
-    
     //excercise 2.88
     /**
      * Mutator for refNumber 
