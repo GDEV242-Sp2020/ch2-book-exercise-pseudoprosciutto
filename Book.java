@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String refNumber = "";
 
     /**
      * 2.86 - by having a field that is a step removed and accessed through 
@@ -48,8 +49,6 @@ class Book
         return pages;
     }
     
-    
-    
     //excercise 2.84
     /**
      * Print Author to the terminal
@@ -65,13 +64,31 @@ class Book
         System.out.println("Title: " +title);
     }
     
+    //excercise 2.87
     /**
-     * 
+     * Prints the details of the book: title ,author, and pages.
      */
+    public void printDetails(){
+        System.out.println("Title: " +title
+                            +" Author: " +author
+                            +" Pages: " +pages);
+    }
+    
+    //excercise 2.88
+    /**
+     * Mutator for refNumber 
+     */
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+    }
     
     /**
-     * 
+     * Returns refNumber
      */
-    
+    public String getRefNumber()
+    {
+        return refNumber;
+    }
     
 }
