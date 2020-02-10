@@ -14,8 +14,8 @@ class Book
     private int pages;
 
     /**
-     * Set the author and title fields when this object
-     * is constructed.
+     * 2.86 - by having a field that is a step removed and accessed through 
+     * read only methods the field is immutable. 
      */
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
@@ -23,6 +23,7 @@ class Book
         title = bookTitle;
         pages = bookPages;
     }
+    
     
     //excercise 2.83 accessor methods
     /**
@@ -41,11 +42,13 @@ class Book
     
     //excercise 2.85
     /**
-     * get number of Pages
+     * get number of Pages 
      */
     public int getPages(){
         return pages;
     }
+    
+    
     
     //excercise 2.84
     /**
