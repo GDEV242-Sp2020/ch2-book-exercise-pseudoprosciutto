@@ -3,12 +3,12 @@
  * This might form part of a larger application such
  * as a library system, for instance.
  *
- * @author (Insert your name here.)
- * @version (Insert today's date here.)
+ * @author Matthew Sheehan
+ * @version 02/09/2020
  */
 class Book
 {
-     // The fields.
+    
     private String author;
     private String title;
 
@@ -22,5 +22,5 @@ class Book
         title = bookTitle;
     }
 
-    // Add the methods here ...
+    
 }
